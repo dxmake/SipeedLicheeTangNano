@@ -24,12 +24,16 @@ wire btn_b;
 ButtonFilter buttonFilter_a (
     .clk_100K(clk_100K),
     .btn_i(btn_a_i),
-    .btn_o(btn_a)
+    .btn_o(btn_a),
+    .btnPress(),
+    .btnRelease()
 );
 ButtonFilter buttonFilter_b (
     .clk_100K(clk_100K),
     .btn_i(btn_b_i),
-    .btn_o(btn_b)
+    .btn_o(btn_b),
+    .btnPress(),
+    .btnRelease()
 );
 
 
